@@ -1,0 +1,152 @@
+<header class="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler hidden-lg-up" type="button" mobile-nav-toggle>&#9776;</button>
+        <a class="navbar-brand" href="#"></a>
+
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggle" href="#">&#9776;</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/home']"> Home</a>
+            </li>
+            <li class="nav-item p-x-1">
+                 <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/benefits']"> Benefits</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/services']"> Services</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/products']"> Financial Products</a>
+            </li>
+            <li class="nav-item p-x-1">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/education']">Credit Education</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right hidden-md-down">
+            <li class="nav-item customer-login-link">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/register']">SignUp</a>
+            </li>
+            <li class="nav-item customer-login-link">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/login']">Customer Login</a>
+            </li>
+        </ul>
+
+    </div>
+</header>
+
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Pages</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/home']"><i class="icon-star"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/benefits']"><i class="icon-star"></i> Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/services']"><i class="icon-star"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/products']"><i class="icon-star"></i> Financial Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/education']"><i class="icon-star"></i> Credit Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/login']"><i class="icon-star"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/register']"><i class="icon-star"></i> SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/404']"><i class="icon-star"></i> Error 404</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/500']"><i class="icon-star"></i> Error 500</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Main content -->
+<main class="main">
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div><!-- /.conainer-fluid -->
+</main>
+
+<footer class="footer">
+    <div class="container-fluid">
+    <div class="row footer-row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h3>Social Media Links</h3>
+                <a href="#">
+                <i class="fa fa-facebook-square social-links"></i>
+                </a>
+                <a href="#">
+                <i class="fa fa-twitter-square social-links"></i>
+                </a>
+                <a href="#">
+                <i class="fa fa-google-plus-square social-links"></i>
+                </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h3>Get In Touch</h3>
+            <h4>By Email</h4>
+                <address>
+                    <a href="mailto:info@riverwalkcredit.com">info@riverwalkcredit.com</a>
+                </address>
+            <h4>By Mail</h4>
+                <address>
+                    <p>1601 Airport Freeway, 2nd Floor
+                    <br>Euless, TX 76040
+                    </p>
+                </address>
+            <h4>By Telephone/Fax</h4>
+                <address>
+                    <p>Toll Free:<br> 
+                    1-877-895-2919
+                    <br>Local:<br> 
+                    817-768-5572
+                    <br>Fax:<br> 
+                    817-768-5580
+                    </p>
+                </address>   
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h3>Quick Links</h3>
+            <a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <h3>Quick Links</h3>
+            <a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+            <br><a href="#">Place Holder Link</a>
+        </div>
+    </div>
+    <div class="row">
+    <span class="text-left">
+        <a href="https://riverwalkcredit.com">Riverwalk Credit</a> &copy; 2016 Riverwalk Credit
+    </span>
+    <span class="pull-right">
+        Powered by <a href="https://wuno.com">Wuno, Inc.</a>
+    </span>
+    </div>
+    </div>
+</footer>

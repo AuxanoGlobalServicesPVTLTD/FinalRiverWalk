@@ -1,0 +1,121 @@
+/* You can add custom styles to this file, and also import other style files */
+
+li.nav-item.customer-login-link {
+    padding-right: 25px;
+}
+
+.slides {
+	margin-top: 0px;
+}
+
+.main .container-fluid {
+    padding: 0px 0px 0px 0px;
+}
+
+.underSlide {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.txtFormat {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.crumb {
+    width: 100%;
+    min-height: 5px;
+    border-top: 3px dotted #ccc;
+    padding: 20px;
+    margin: 60px 0 0 0;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.orderCent {
+float: none;
+margin: 0 auto;
+text-align: center;
+padding-top: 60px;
+}
+
+.orderCent p {
+margin: 0 auto;
+text-align: center;
+padding-top: 60px;
+}
+
+.myButton-2 {
+    background-color: #c12940;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: arial;
+    font-size: 20px;
+    padding: 11px 18px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.pad {
+	padding: 20px;
+}
+/* ================= Media Quries ================= */
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+.myRiverwalkUnderSlide {
+    margin: 80px 0 0 0 !important;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.orderCent {
+    text-align: left;
+    margin: 0 auto;
+    float: none;
+    width: 180px;
+    padding: 10px;
+}
+
+.underSlide {
+   padding: 40px;
+}
+
+.myRiverwalkUnderSlide {
+    margin: 80px 0 0 0 !important;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px){
+.orderCent {
+    text-align: left;
+    margin: 0 auto;
+    float: none;
+    width: 170px;
+    padding: 5px;
+}
+
+.underSlide {
+   padding: 40px;
+}
+
+.myRiverwalkUnderSlide {
+    margin: 80px 0 0 0 !important;
+}
+}
+
+.welcome-icons {
+	width: 57px;
+}
