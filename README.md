@@ -6,6 +6,13 @@ A modern credit repair website with credit monitoring services
 
 * Angular - Angular 2
 
+## Development Environment
+
+angular-cli: 1.0.0-beta.17
+node: 6.7.0
+os: darwin x64 Sierra
+npm: 3.10.3
+
 ## Contributing
 
 No Contributing
