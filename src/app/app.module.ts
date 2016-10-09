@@ -46,6 +46,7 @@ import { BenefitsComponent }            from './pages/benefits.component';
 import { ServicesComponent }            from './pages/services.component';
 import { ProductsComponent }            from './pages/products.component';
 import { EducationComponent }           from './pages/education.component';
+import { FcraComponent }                from './pages/fcra.component';
 
 @NgModule({
   imports: [
@@ -81,7 +82,8 @@ import { EducationComponent }           from './pages/education.component';
     BenefitsComponent,
     ServicesComponent,
     ProductsComponent,
-    EducationComponent
+    EducationComponent,
+    FcraComponent
   ],
   bootstrap: [ AppComponent ]
 })

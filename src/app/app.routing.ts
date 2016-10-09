@@ -35,6 +35,7 @@ import { BenefitsComponent }            from './pages/benefits.component';
 import { ServicesComponent }            from './pages/services.component';
 import { EducationComponent }            from './pages/education.component';
 import { ProductsComponent }            from './pages/products.component';
+import { FcraComponent }            from './pages/fcra.component';
 
 const appRoutes: Routes = [
     {
@@ -194,6 +195,13 @@ const appRoutes: Routes = [
                 component: ProductsComponent,
                 data: {
                     title: 'Products Page'
+                }
+            },
+            {
+                path: 'fcra',
+                component: FcraComponent,
+                data: {
+                    title: 'FCRA'
                 }
             },
             {
