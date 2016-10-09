@@ -47,6 +47,10 @@ import { ServicesComponent }            from './pages/services.component';
 import { ProductsComponent }            from './pages/products.component';
 import { EducationComponent }           from './pages/education.component';
 import { FcraComponent }                from './pages/fcra.component';
+import { CroaComponent }                from './pages/croa.component';
+import { BuildingComponent }            from './pages/building.component';
+import { TipsComponent }                from './pages/tips.component';
+import { MaintenanceComponent }         from './pages/maintenance.component';
 
 @NgModule({
   imports: [
@@ -83,7 +87,11 @@ import { FcraComponent }                from './pages/fcra.component';
     ServicesComponent,
     ProductsComponent,
     EducationComponent,
-    FcraComponent
+    FcraComponent,
+    CroaComponent,
+    BuildingComponent,
+    TipsComponent,
+    MaintenanceComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -33,9 +33,13 @@ import { RegisterComponent }            from './pages/register.component';
 import { HomeComponent }                from './pages/home.component';
 import { BenefitsComponent }            from './pages/benefits.component';
 import { ServicesComponent }            from './pages/services.component';
-import { EducationComponent }            from './pages/education.component';
+import { EducationComponent }           from './pages/education.component';
 import { ProductsComponent }            from './pages/products.component';
-import { FcraComponent }            from './pages/fcra.component';
+import { FcraComponent }                from './pages/fcra.component';
+import { CroaComponent }                from './pages/croa.component';
+import { BuildingComponent }            from './pages/building.component';
+import { TipsComponent }                from './pages/tips.component';
+import { MaintenanceComponent }         from './pages/maintenance.component';
 
 const appRoutes: Routes = [
     {
@@ -202,6 +206,34 @@ const appRoutes: Routes = [
                 component: FcraComponent,
                 data: {
                     title: 'FCRA'
+                }
+            },
+            {
+                path: 'croa',
+                component: CroaComponent,
+                data: {
+                    title: 'CROA'
+                }
+            },
+            {
+                path: 'building',
+                component: BuildingComponent,
+                data: {
+                    title: 'Education Building'
+                }
+            },
+            {
+                path: 'tips',
+                component: TipsComponent,
+                data: {
+                    title: 'Education Tips'
+                }
+            },
+            {
+                path: 'maintenance',
+                component: MaintenanceComponent,
+                data: {
+                    title: 'Education Maintenance'
                 }
             },
             {
