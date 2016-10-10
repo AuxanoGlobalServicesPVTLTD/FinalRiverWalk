@@ -62,14 +62,11 @@ li.nav-item.customer-login-link {
 
 .txtFormat {
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px !important;
     background-color: #779476;
     color: #fff;
     border-radius: 6px;
     min-height: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle
 }
 
 .txtFormat a {
