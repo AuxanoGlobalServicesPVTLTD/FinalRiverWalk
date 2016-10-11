@@ -149,6 +149,66 @@ button.btn.btn-shield.btn-lg.btn-block:hover {
     font-size: 36px;
 }
 
+.product.para {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.product.compliantgroup.nosymbol {
+    list-style-type: none;
+}
+.product.row.primaryUnderSlide {
+    padding: 20px 0 20px 0;
+}
+.product.compliantgroup {
+    text-align: left;
+  margin-top: 18px;
+}
+.product.col-sm-4 {
+  padding: 0px 11px 17px 10px;
+}
+.product.repair-sec {
+    padding: 20px 0px 0px 0;
+}
+.product.crumb{
+  border: none;
+}
+.product.fa.fa-balance-scale {
+  font-size: 57px;
+  margin: 12px;
+}
+.product.fa.fa-lock {
+  font-size: 57px;
+  margin: 12px;
+}
+.product.fa.fa-cog {
+  font-size: 57px;
+  margin: 12px;
+}
+.product.fa.fa-long-arrow-down {
+  font-size: 57px;
+  margin: 12px;
+}
+.product.fa.fa-check {
+  font-size: 57px;
+  margin: 12px;
+}
+.service.row.center.txtFormat {
+    padding: 47px 30px 0 30px;
+}
+.service.number {
+    font-size: 35px;
+    font-weight: bold;
+}
+.service.cost {
+    font-weight: bold;
+}
+.service.fa.fa-usd {
+    font-size: 33px;
+}
+.service.row.center.credit {
+    padding: 10px 0px 0px 0px;
+}
+
 i.fa.fa-search.analyze {
 	color: #779476;
     font-size: 36px;
