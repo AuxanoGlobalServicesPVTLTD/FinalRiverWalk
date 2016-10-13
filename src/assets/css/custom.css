@@ -149,46 +149,46 @@ button.btn.btn-shield.btn-lg.btn-block:hover {
     font-size: 36px;
 }
 
-.product.para {
+.benefit.para {
     font-weight: bold;
     margin-bottom: 0px;
 }
-.product.compliantgroup.nosymbol {
+.benefit.compliantgroup.nosymbol {
     list-style-type: none;
 }
-.product.row.primaryUnderSlide {
+.benefit.row.primaryUnderSlide {
     padding: 20px 0 20px 0;
 }
-.product.compliantgroup {
+.benefit.compliantgroup {
     text-align: left;
   margin-top: 18px;
 }
-.product.col-sm-4 {
+.benefit.col-sm-4 {
   padding: 0px 11px 17px 10px;
 }
-.product.repair-sec {
+.benefit.repair-sec {
     padding: 20px 0px 0px 0;
 }
-.product.crumb{
+.benefit.crumb{
   border: none;
 }
-.product.fa.fa-balance-scale {
+.benefit.fa.fa-balance-scale {
   font-size: 57px;
   margin: 12px;
 }
-.product.fa.fa-lock {
+.benefit.fa.fa-lock {
   font-size: 57px;
   margin: 12px;
 }
-.product.fa.fa-cog {
+.benefit.fa.fa-cog {
   font-size: 57px;
   margin: 12px;
 }
-.product.fa.fa-long-arrow-down {
+.benefit.fa.fa-long-arrow-down {
   font-size: 57px;
   margin: 12px;
 }
-.product.fa.fa-check {
+.benefit.fa.fa-check {
   font-size: 57px;
   margin: 12px;
 }
@@ -240,6 +240,32 @@ a.mybtn1 :hover {
 
 .repair-sec {
     padding: 20px 0 80px 0;
+}
+
+.left {
+    text-align: left;
+    margin: 0 auto;
+    padding: 12px 30px 0 30px;
+}
+
+.building.btn.btn-info{
+  width: 100%;
+  text-align: left;
+  background-color: #779476;
+  border-color: #779476;
+}
+
+.building.btn-info:focus, .building.btn-info.focus{
+  background-color: #779476;
+  border-color: #779476;
+}
+
+blockquote{
+  border-left: none;
+}
+
+.answer{
+  font-size: 16px;
 }
 
 .social-links {
@@ -335,4 +361,17 @@ address {
 	padding-bottom: 110px;
 }
 	}
+
+@media only screen and (min-width: 320px) and (max-width: 764px){
+  .responsive-width {
+    font-size: 2.2vw;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .main {
+    padding-bottom: 50px !important;
+  }
+}
+
 
