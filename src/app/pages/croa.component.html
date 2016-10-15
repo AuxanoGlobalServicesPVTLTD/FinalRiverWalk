@@ -10,14 +10,14 @@
     </div>
 	<div class="product row primaryUnderSlide">
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content">SEC. 401. SHORT TITLE.</button>
-			<div id="content" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed = !isCollapsed">SEC. 401. SHORT TITLE.</button>
+			<div [collapse]="isCollapsed" class="card card-block card-header">
 				<p class="answer">This title may be cited as the 'Credit Repair Organizations Act'.  </p>
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content1">SEC. 402. FINDINGS AND PURPOSES.</button>
-			<div id="content1" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed1 = !isCollapsed1">SEC. 402. FINDINGS AND PURPOSES.</button>
+			<div [collapse]="isCollapsed1" class="card card-block card-header">
 				<p class="answer">(a) Findings.--The Congress makes the following findings:</p>
 				<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText"> Consumers have a vital interest in establishing and maintaining their credit worthiness and credit standing in order to obtain and use credit. As a result, consumers who have experienced credit problems may seek assistance from credit repair organizations which offer to improve the credit standing of such consumers.   </p></li>
@@ -31,8 +31,8 @@
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content2">SEC. 403. DEFINITIONS. </button>
-			<div id="content2" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed2 = !isCollapsed2">SEC. 403. DEFINITIONS. </button>
+			<div [collapse]="isCollapsed2" class="card card-block card-header">
 				<p class="answer">For purposes of this title, the following definitions apply:</p>
 				
 				<ul class="product compliantgroup">
@@ -62,8 +62,8 @@
 		</div>
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content3">SEC. 404. PROHIBITED PRACTICES.  </button>
-			<div id="content3" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed3 = !isCollapsed3">SEC. 404. PROHIBITED PRACTICES.  </button>
+			<div [collapse]="isCollapsed3" class="card card-block card-header">
 						
 				<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) In General.--No person may-- </p></li>
@@ -86,8 +86,8 @@
 		
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content4">SEC. 405. DISCLOSURES.</button>
-			<div id="content4" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed4 = !isCollapsed4">SEC. 405. DISCLOSURES.</button>
+			<div [collapse]="isCollapsed4" class="card card-block card-header">
 				
 				<p class="answer">If your wallet or purse is missing:</p>
 				<ul class="product compliantgroup">
@@ -119,8 +119,8 @@
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content5">SEC. 406. CREDIT REPAIR ORGANIZATIONS CONTRACTS. </button>
-			<div id="content5" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed5 = !isCollapsed5">SEC. 406. CREDIT REPAIR ORGANIZATIONS CONTRACTS. </button>
+			<div [collapse]="isCollapsed5" class="card card-block card-header">
 			
 			<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) Written Contracts Required.--No services may be provided by any credit repair organization for any consumer--  </p></li>
@@ -141,8 +141,8 @@
 		</div>
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content6">SEC. 407. RIGHT TO CANCEL CONTRACT.  </button>
-			<div id="content6" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed6 = !isCollapsed6">SEC. 407. RIGHT TO CANCEL CONTRACT.  </button>
+			<div [collapse]="isCollapsed6" class="card card-block card-header">
 			
 			<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) In General. -- Any consumer may cancel any contract with any credit repair organization without penalty or obligation by notifying the credit repair organization of the consumer's intention to do so at any time before midnight of the 3rd business day which begins after the date on which the contract or agreement between the consumer and the credit repair organization is executed or would, but for this subsection, become enforceable against the parties </p></li>
@@ -162,8 +162,8 @@
 		
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content7">SEC. 408. NONCOMPLIANCE WITH THIS TITLE.  </button>
-			<div id="content7" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed7 = !isCollapsed7">SEC. 408. NONCOMPLIANCE WITH THIS TITLE.  </button>
+			<div [collapse]="isCollapsed7" class="card card-block card-header">
 			
 			<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) Consumer Waivers Invalid.--Any waiver by any consumer of any protection provided by or any right of the consumer under this title--</p></li>
@@ -179,8 +179,8 @@
 		</div>
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content8">SEC. 409. CIVIL LIABILITY. </button>
-			<div id="content8" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed8 = !isCollapsed8">SEC. 409. CIVIL LIABILITY. </button>
+			<div [collapse]="isCollapsed8" class="card card-block card-header">
 			
 			<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) Liability Established.--Any person who fails to comply with any provision of this title with respect to any other person shall be liable to such person in an amount equal to the sum of the amounts determined under each of the following paragraphs: </p></li>
@@ -205,8 +205,8 @@
 		
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content9">SEC. 410. ADMINISTRATIVE ENFORCEMENT. </button>
-			<div id="content9" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed9 = !isCollapsed9">SEC. 410. ADMINISTRATIVE ENFORCEMENT. </button>
+			<div [collapse]="isCollapsed9" class="card card-block card-header">
 			
 			<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">(a) In General.--Compliance with the requirements imposed under this title with respect to credit repair organizations shall be enforced under the Federal Trade Commission Act by the Federal Trade Commission. </p></li>
@@ -236,24 +236,24 @@
 				
 				
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content10">SEC. 411. STATUTE OF LIMITATIONS. </button>
-			<div id="content10" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed10 = !isCollapsed10">SEC. 411. STATUTE OF LIMITATIONS. </button>
+			<div [collapse]="isCollapsed10" class="card card-block card-header">
 				<p class="answer">Any action to enforce any liability under this title may be brought before the later of-- (1) the end of the 5-year period beginning on the date of the occurrence of the violation involved; or   (2) in any case in which any credit repair organization has materially and willfully misrepresented any information which--   (A) the credit repair organization is required, by any provision of this title, to disclose to any consumer; and   (B) is material to the establishment of the credit repair organization's liability to the consumer under this title, the end of the 5-year period beginning on the date of the discovery by the consumer of the misrepresentation.  </p>
 			
 			</div>
 		</div>
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content11">SEC. 412. RELATION TO STATE LAW.</button>
-			<div id="content11" class="collapse">
+			<button type="button" class="building btn   btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed11 = !isCollapsed11">SEC. 412. RELATION TO STATE LAW.</button>
+			<div [collapse]="isCollapsed11" class="card card-block card-header">
 				<p class="answer">This title shall not annul, alter, affect, or exempt any person subject to the provisions of this title from complying with any law of any State except to the extent that such law is inconsistent with any provision of this title, and then only to the extent of the inconsistency. </p>
 			
 			</div>
 		</div>
 		
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content12">SEC. 413. EFFECTIVE DATE.(17) </button>
-			<div id="content12" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed12 = !isCollapsed12">SEC. 413. EFFECTIVE DATE.(17) </button>
+			<div [collapse]="isCollapsed12" class="card card-block card-header">
 				<p class="answer">This title shall apply after the end of the 6-month period beginning on the date of the enactment of the Credit Repair Organizations Act, except with respect to contracts entered into by a credit repair organization before the end of such period.''. </p>
 				<p class="answer">Pub. L. No. 104-208, 110 Stat. 3009 (Sept. 30, 1996). The amendments to the credit statutes are in Title II of the Act, entitled "Economic Growth and Regulatory Paperwork Reduction." The footnotes in this copy of the Act are not part of the Act, but are cross-references inserted by the FTC staff for the convenience of the reader.  </p>
 				<ul>

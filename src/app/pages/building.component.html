@@ -13,14 +13,14 @@
     </div>
 	<div class="product row primaryUnderSlide">
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content">Q: Do I have a right to know what's in my report?</button>
-			<div id="content" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed = !isCollapsed">Q: Do I have a right to know what's in my report?</button>
+			<div [collapse]="isCollapsed" class="card card-block card-header">
 				<p class="answer">A: You have the right to know what's in your report, but you have to ask for the information. The consumer reporting company must tell you everything in your report, and give you a list of everyone who has requested your report within the past year - or the past two years if the requests were related to employment.</p>
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content1">Q: What type of information do consumer reporting companies collect and sell?</button>
-			<div id="content1" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed1 = !isCollapsed1">Q: What type of information do consumer reporting companies collect and sell?</button>
+			<div [collapse]="isCollapsed1" class="card card-block card-header">
 				<p class="answer">A: Consumer reporting companies collect and sell four basic types of information:</p>
 				<p class="answer">Identification and employment information: Your name, birth date, Social Security number, employer, and spouse's name are noted routinely. The consumer reporting company also may provide information about your employment history, home ownership, income, and previous address, if a creditor asks.</p>
 				<p class="answer">Payment history: Your accounts with different creditors are listed, showing how much credit has been extended and whether you've paid on time. Related events, such as the referral of an overdue account to a collection agency, also may be noted.</p>
@@ -29,15 +29,15 @@
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content2">Q: What information do I have to provide to get my free report?</button>
-			<div id="content2" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed2 = !isCollapsed2">Q: What information do I have to provide to get my free report?</button>
+			<div [collapse]="isCollapsed2" class="card card-block card-header">
 				<p class="answer">A: You need to provide your name, address, Social Security number, and date of birth. If you have moved in the last two years, you may have to provide your previous address. To maintain the security of your file, each nationwide consumer reporting company may ask you for some information that only you would know, like the amount of your monthly mortgage payment. Each company may ask you for different information because the information each has in your file may come from different sources. </p>
 				<p class="answer">Still, annualcreditreport.com is the only authorized online source for your free annual credit report from the three nationwide consumer reporting companies. Neither the website nor the companies will call you first to ask for personal information or send you an email asking for personal information. If you get a phone call or an email - or see a pop-up ad - claiming it's from annualcreditreport.com (or any of the three nationwide consumer reporting companies), it's probably a scam. Don't reply or click on any link in the message. Instead, forward any email that claims to be from annualcreditreport.com (or any of the three consumer reporting companies) to spam@uce.gov, the FTC's database of deceptive spam.</p>
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content3">Q: Are there other situations where I might be eligible for a free report?</button>
-			<div id="content3" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed3 = !isCollapsed3">Q: Are there other situations where I might be eligible for a free report?</button>
+			<div [collapse]="isCollapsed3" class="card card-block card-header">
 				<p class="answer">A: Under federal law, you're entitled to a free report if a company takes adverse action against you, such as denying your application for credit, insurance, or employment, and you ask for your report within 60 days of receiving notice of the action. The notice will give you the name, address, and phone number of the consumer reporting company. You're also entitled to one free report a year if you're unemployed and plan to look for a job within 60 days; if you're on welfare; or if your report is inaccurate because of fraud, including identity theft. Otherwise, any of the three consumer reporting companies may charge you up to $10.50 for another copy of your report within a 12-month period.</p>
 			</div>
 		</div>

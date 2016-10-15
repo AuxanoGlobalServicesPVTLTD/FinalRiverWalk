@@ -8,8 +8,8 @@
     </div>
 	<div class="product row primaryUnderSlide">
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content">Know What Creditors Look for on Credit Reports</button>
-			<div id="content" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed = !isCollapsed">Know What Creditors Look for on Credit Reports</button>
+			<div [collapse]="isCollapsed" class="card card-block card-header">
 				<p class="answer">Understanding what types of information most creditors evaluate is important. Your credit report is a key part of your credit score, but it is not the only factor. You get points for other things like: </p>
 				<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">Your bill-paying history</p></li>
@@ -24,8 +24,8 @@
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content1">Keep Credit Cards Under Control</button>
-			<div id="content1" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed1 = !isCollapsed1">Keep Credit Cards Under Control</button>
+			<div [collapse]="isCollapsed1" class="card card-block card-header">
 				<p class="answer">Whether you shop online, by telephone or by mail, a credit card can make buying many things much easier; but when you use a credit card, it's important to keep track of your spending. Incidental and impulse purchases add up, and each one you make with a credit card is a separate loan. When the bill comes, you have to pay what you owe. Owing more than you can afford to repay can damage your credit rating.</p>
 				<p class="answer">Keeping good records can prevent a lot of headaches, especially if there are inaccuracies on your monthly statement. If you notice a problem, promptly report it to the company that issued the card. Usually the instructions for disputing a charge are on your monthly statement. If you order by mail, by telephone or online, keep copies and printouts with details about the transaction. </p>
 				<p class="answer">These details should include the company's name, address and telephone number; the date of your order; a copy of the order form you sent to the company or a list of the stock codes of the items ordered; the order confirmation code; the ad or catalog from which you ordered (if applicable); any applicable warranties; and the return and refund policies. </p>
@@ -42,8 +42,8 @@
 			</div>
 		</div>
 		<div class="row left">
-			<button type="button" class="building btn btn-info btn-default btn-lg btn-block responsive-width" data-toggle="collapse" data-target="#content2">Protect Your Identity</button>
-			<div id="content2" class="collapse">
+			<button type="button" class="building btn btn-primary btn-info btn-default btn-lg btn-block responsive-width" (click)="isCollapsed2 = !isCollapsed2">Protect Your Identity</button>
+			<div [collapse]="isCollapsed2" class="card card-block card-header">
 				<p class="answer">Identity theft involves someone else using your personal information to create fraudulent accounts, charge items to another person's existing accounts, or even get a job. You can minimize the risks by managing your personal information wisely and cautiously. Here are some ways to protect yourself from identity theft: 	</p>
 				<ul class="product compliantgroup">
 					<li class="product compliantgroupitem"><p class="servText">Before you reveal any personally identifying information, find out how it will be used and whether it will be shared.</p></li>
