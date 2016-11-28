@@ -1,0 +1,12 @@
+<ul class="nav navbar-nav pull-right">
+    <li class="nav-item">
+        <a class="nav-link" (click)="auth.login()" *ngIf="!auth.authenticated()">Login / SignUp</a>
+        <a class="aside-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" *ngIf="auth.authenticated()">
+            <span *ngIf="auth.authenticated() && auth.userProfile" class="profile-name">{{auth.userProfile.nickname}}</span>
+            <span *ngIf="!auth.authenticated() && !auth.userProfile" class="profile-name">Account</span>
+            <i class="icon-bell"></i><span class="tag tag-pill tag-danger profile-alerts">5</span>
+            <img *ngIf="auth.authenticated() && auth.userProfile" [src]="auth.userProfile.picture" class="img-avatar profile-picture" alt="User profile picture">
+            <img *ngIf="!auth.authenticated() && !auth.userProfile" src="/img/avatars/gravatar-default.png" class="img-avatar profile-picture" alt="Default profile-picture">
+        </a>
+    </li>
+</ul>

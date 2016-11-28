@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="animated fadeIn">
+	    <div class="row">
+	    <h1> Hello {{auth.userProfile.given_name}}, Review Your Credit Reports</h1>
+	        <div class="col-sm-12 col-md-12 col-lg-12">
+	        	 <div class="btn-group" role="group" aria-label="Credit Report Navigation">
+			        <button [ngClass]="{'active': shown == 'EQUIFAX'}" (click)="shown = 'EQUIFAX'" type="button" id="equifax" class="btn btn-secondary equ-btn">Equifax Report </button>
+			        <button (click)="shown = 'TRANSUNION'" type="button" id="transunion" class="btn btn-secondary trn-btn">Transunion Report </button>
+			        <button (click)="shown = 'EXPERIAN'" type="button" id="experian" class="btn btn-secondary exp-btn">Experian Report </button>
+			    </div>
+	            <div class="card">
+	                <div *ngIf="shown === 'EQUIFAX'"  class="card-header tag-success">
+	                <span class="equifax-report white">Equifax Report</span>
+	                </div>
+	                <div *ngIf="shown === 'TRANSUNION'"  class="card-header tag-warning">
+	                <span class="equifax-report white">Transunion Report</span>
+	                </div>
+	                <div *ngIf="shown === 'EXPERIAN'"  class="card-header tag-primary">
+	                <span class="equifax-report white">Experian Report</span>
+	                </div>
+	                <div class="card-block">
+	                   <div *ngIf="shown === 'EQUIFAX'" class="equifax-report">
+	                   This is the equifax report
+	                   </div>
+	                   	<div *ngIf="shown === 'TRANSUNION'"class="transunion-report">
+	                   This is the transunion report
+	                   </div>
+	                   <div *ngIf="shown === 'EXPERIAN'" class="experian-report">
+	                   This is the experian report
+	                   </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--/col-->
+	    </div>
+	    <!--/row-->
+	</div> <!--End animated fadeIn-->
+</div> <!--End container-->

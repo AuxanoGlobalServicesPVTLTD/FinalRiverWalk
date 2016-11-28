@@ -1,0 +1,173 @@
+<div class="container">
+  <div class="animated fadeIn">
+    <div class="row">
+      <!-- THIS IS THE PAYMENT METHOD FORM -->
+      <div [hidden]="paymentSubmitted">
+        <form *ngIf="paymentActive" (ngSubmit)="paymentSubmit()" #paymentForm="ngForm">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="card card-inverse card-success">
+              <div class="card-header">
+                <strong>Add Credit Card</strong>
+              </div>
+              <div class="card-block">
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="cardName">Name on Card</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Enter name on card" id="cardName"
+                      [(ngModel)]="payment.cardName" name="cardName" required  #cardName="ngModel">
+                    </div>
+                    <div [hidden]="cardName.valid || cardName.pristine" class="alert alert-danger">Card name is required</div>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="cardType">Card Type</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <select class="form-control" id="cardType"
+                      required
+                      [(ngModel)]="payment.cardType" name="cardType" 
+                      #cardType="ngModel" >
+                      <option value="" disabled selected>Card Type</option>
+                      <option *ngFor="let cardType of cardTypes" [value]="cardType">{{cardType}}</option>
+                      </select>
+                    </div>
+                    <div [hidden]="cardType.valid || cardType.pristine" class="alert alert-danger">
+                      Card Type is required
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-12">
+                    <label for="cardNumber">Credit Card number</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Enter your credit card number" id="cardNumber"
+                      [(ngModel)]="payment.cardNumber" name="cardNumber" required  #cardNumber="ngModel">
+                    </div>
+                    <div [hidden]="cardNumber.valid || cardNumber.pristine" class="alert alert-danger">Card number is required</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-4">
+                    <label for="expMonth">Month</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <select class="form-control" id="expMonth"
+                      required
+                      [(ngModel)]="payment.expMonth" name="expMonth" 
+                      #expMonth="ngModel" >
+                      <option value="" disabled selected>Expiration Month</option>
+                      <option *ngFor="let expMonth of expMonths" [value]="expMonth">{{expMonth}}</option>
+                      </select>
+                    </div>
+                    <div [hidden]="expMonth.valid || expMonth.pristine" class="alert alert-danger">
+                      Expiration month is required
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-4">
+                    <label for="expYear">Year</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <select class="form-control" id="expYear"
+                      required
+                      [(ngModel)]="payment.expYear" name="expYear" 
+                      #expYear="ngModel" >
+                      <option value="" disabled selected>Expiration Year</option>
+                      <option *ngFor="let expYear of expYears" [value]="expYear">{{expYear}}</option>
+                      </select>
+                    </div>
+                    <div [hidden]="expYear.valid || expYear.pristine" class="alert alert-danger">
+                      Expiration month is required
+                    </div>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-4">
+                    <label for="cvc">CVC</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Enter your CVC number" id="cvc"
+                      [(ngModel)]="payment.cvc" name="cvc" required  #cvc="ngModel">
+                    </div>
+                    <div [hidden]="cvc.valid || cvc.pristine" class="alert alert-danger">CVC number is required</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer tag-primary white">
+                Add New Credit Card - 
+                <button type="submit" class="btn btn-sm btn-danger btn-oj" [disabled]="!paymentForm.form.valid"><i class="fa fa-dot-circle-o"></i> Add Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <!-- THIS IS THE PAYMENT METHOD LIST -->
+      <div [hidden]="paymentSubmitted">
+        <form *ngIf="paymentActive" (ngSubmit)="paymentSubmit()" #paymentForm="ngForm">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="card card-inverse card-success">
+              <div class="card-header">
+                <strong>Card on File</strong>
+              </div>
+              <div class="card-block">
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="lastFour">Last 4 of Card Number</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-credit-card"></i>
+                    </span>
+                    <input disabled type="text" class="form-control" placeholder="0000 0000 0000 0000" id="lastFour">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer tag-primary white">
+                <button type="submit" class="btn btn-sm btn-danger btn-oj"><i class="fa fa-dot-circle-o"></i> Make Default</button>
+                <button type="submit" class="btn btn-sm btn-danger btn-oj"><i class="fa fa-dot-circle-o"></i> Remove Payment Method</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- THIS IS THE ADDRESS FORM DATA OUTPUT -->
+<div [hidden]="!paymentSubmitted">
+  <h2>You submitted the following:</h2>
+  <div class="row">
+    <div class="col-xs-3">Card Name</div>
+    <div class="col-xs-9  pull-left">{{ payment.cardName }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Card Type</div>
+    <div class="col-xs-9 pull-left">{{ payment.cardType }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Card Number</div>
+    <div class="col-xs-9 pull-left">{{ payment.cardNumber }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Expiration Month</div>
+    <div class="col-xs-9 pull-left">{{ payment.expMonth }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">Expiration Year</div>
+    <div class="col-xs-9 pull-left">{{ payment.expYear }}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">CVC</div>
+    <div class="col-xs-9 pull-left">{{ payment.cvc }}</div>
+  </div>
+  <br>
+  <button class="btn btn-default" (click)="paymentSubmitted=false">Edit</button>
+</div>
